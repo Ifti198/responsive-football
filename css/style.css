@@ -1,0 +1,342 @@
+/* ============
+font
+============= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/* ============
+utilies
+=============*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1162px;
+    margin: auto;
+}
+.primary-title{
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+.secondary-title{
+    color: #18191F;
+    font-size: 28px;
+    line-height: 40px;
+}
+.tertiary-title{
+    color: #0A0826; 
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 8px;
+}
+a{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+.anchor-button-link{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* banner */
+.banner{
+    background: #2D25A0;
+    padding: 42px 0 86px;
+}
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+}
+.menu-item a{
+    margin-left: 36px;
+}
+.menu-item #ml-0{
+    margin-left: 0;
+}
+.header-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-image img{
+    width : 556.01px;
+    height : 438px;
+    transition:  transform 1s ease;
+}
+.header-bottom .header-banner:hover img{
+    transform: rotateY(180deg);
+}
+/*=============
+ player-area
+ ============== */
+.player-area{
+    margin: 70px 0 165px;
+}
+.player-container{
+   width: 1050px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.players .player{
+    border: 1px solid white;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+/*==============
+ highlights area  
+ ==============*/
+.highlights{
+    display: flex;
+    justify-content: space-between;
+}
+.highlight-title{
+    margin-right: 66px;
+}
+.highlight-title p{
+    margin: 0 0 24px;
+}
+.highlight-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlight-image img{
+    width: 567px;
+    height: 427px;
+}
+/* =============
+blog post
+==============*/
+.blog-area{
+    padding: 80px 0 50px;
+}
+.blog-posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.blog-posts .post,
+.covid-posts .post{
+    background-color: rgb(1, 30, 65);
+    border: 1px solid white;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.post img{
+    width: 100%;
+    height: 256px;
+}
+.post-title{
+    padding: 0 15px;
+}
+.post-title h2{
+    color: white;
+    font-size: 18px;
+}
+.post-title p{
+    color: white;
+    font-size: 14px;
+}
+.post-title a{
+    font-size: 30px;
+    position: relative;
+    left: 90%;
+}
+.blog-posts .post:hover a,
+.covid-posts .post:hover a{
+    color: rgb(242, 199, 20);
+}
+/*==============
+ covid
+ ============== */
+.covid-update{
+    margin-bottom: 163px;
+}
+.covid-posts{
+    display: flex;
+    justify-content: space-around;
+
+}
+.covid-posts .post{
+    width: 30%;
+}
+/*==============
+footer-area
+ ===============*/
+.footer-area{
+    margin-bottom: 63px;
+}
+.footer-container{
+    width: 483.87px;
+    margin: auto;
+    text-align: center;
+}
+.footer-image img{
+    width: 483.87px;
+    height: 110px;
+}
+.footer-icons{
+    width: 170px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 14px;
+    margin: 20px auto;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(231, 231, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon a{
+    color: rgba(150, 155, 171);
+}
+.footer-para p{
+    color: #000000;;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* ================
+    media queries 
+=================*/
+/*------------ mobile-device ------------------*/
+
+@media only screen and (max-width : 688px) {
+    .banner{
+        padding: 112px 15px 61px;
+    }
+    .container,
+    .player-container,
+    .player img,
+    .highlight-image img,
+    .covid-posts .post,
+    .footer-container{
+        width: 100%;
+    }
+    .header-menu{
+        display: none;
+    }
+    .header-banner,
+    .highlights,
+    .covid-posts{
+        flex-direction: column;
+    }
+    .primary-title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .banner-image img{
+        width: 329px;
+        height: 260px;
+        margin-top: 50px;
+    }
+    .player-area{
+        margin: 47px 0 60px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0px;
+    }
+    .highlights-area{
+        padding: 0 15px;
+    }
+    .tertiary-title{
+        font-size: 30px;
+         line-height: 40px;
+    }
+    .highlight-image{
+        margin-top: 29px;
+    }
+    .blog-area{
+        padding: 30px 15px 10px;
+    }
+    .blog-posts{
+        grid-template-columns: repeat(1, 4fr);
+    }
+    .post{
+        margin-bottom: 24px;
+    }
+    .covid-update{
+        margin-bottom: 43px;
+        padding: 0 15px;
+    }
+    .footer-area{
+        padding: 0 15px;
+        margin-bottom: 150px;
+    }
+    .footer-image img{
+        width: 275px;
+    }
+}
+/*---------------- tablet-device ---------------*/
+
+@media only screen and (min-width: 688px ) and (max-width: 992px) {
+    .container{
+        width: 90%;
+    }
+    .menu-item a{
+        margin-left: 15px;
+    }
+    .primary-title {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .banner-image img {
+        width: 500px;
+        height: 380px;
+    }
+    .player-area{
+        margin: 70px 0 80px;
+    }
+    .player-container,
+    .player img,
+    .highlight-image img,
+    .covid-posts .post{
+        width: 100%;
+     }
+     .players{
+         grid-template-columns: repeat(2, 1fr);
+     }
+    .highlights,
+    .covid-posts{
+        flex-direction: column;
+    }
+    .highlight-image{
+        margin-top: 70px;
+    }
+    .blog-area{
+        padding: 50px 0 0;
+    }
+    .blog-posts{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .covid-update{
+        margin-bottom: 100px;
+    }
+    .covid-posts .post{
+        margin-bottom: 30px;
+    }
+}
+
